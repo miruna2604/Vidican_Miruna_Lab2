@@ -8,4 +8,8 @@ public class Vidican_Miruna_Lab2Context(DbContextOptions<Vidican_Miruna_Lab2Cont
     public DbSet<Publisher> Publisher { get; set; } = default!;
 
     public DbSet<Authors> Authors { get; set; } = default!;
+
+    public DbSet<Category> Category { get; set; } = default!;
+
+    public DbSet<BookCategory> BookCategory { get; set; } = default!;
 }
