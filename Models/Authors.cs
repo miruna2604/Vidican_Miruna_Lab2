@@ -1,4 +1,7 @@
-﻿namespace Vidican_Miruna_Lab2.Models
+﻿
+using System.ComponentModel.DataAnnotations;
+
+namespace Vidican_Miruna_Lab2.Models
 {
     public class Authors
     {
@@ -8,7 +11,15 @@
 
         public string LastName { get; set; } = string.Empty;
 
-        public ICollection<Book>? Books { get; set; }
+        [Display(Name = "Full Name")]
+        public string FullName
+        {
+            get
+            {
+                return FirstName + " " + LastName;
+            }
+        }
 
+        public ICollection<Book>? Books { get; set; }
     }
 }

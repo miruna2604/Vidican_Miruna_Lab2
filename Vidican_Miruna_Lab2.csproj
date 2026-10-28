@@ -7,11 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Pages\Index.cshtml.cs" />
+    <Compile Remove="Pages\Category\**" />
+    <Content Remove="Pages\Category\**" />
+    <EmbeddedResource Remove="Pages\Category\**" />
+    <None Remove="Pages\Category\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Remove="Pages\Index.cshtml" />
+    <Compile Remove="Pages\Index.cshtml.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,7 +28,6 @@
 
   <ItemGroup>
     <Folder Include="Pages\AuthorsPages\" />
-    <Folder Include="Pages\Category\" />
   </ItemGroup>
 
 </Project>

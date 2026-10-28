@@ -1,10 +1,41 @@
-﻿@page
-@model IndexModel
+﻿
+@page
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="text-center mt-5">
+    <h1 class="display-4">Biblioteca</h1>
+
+    <p class="lead">
+        Bine ai venit în aplicația de gestionare a bibliotecii!
+    </p>
+
+    <p>
+        Alege secțiunea pe care dorești să o accesezi.
+    </p>
+
+    <div class="d-flex justify-content-center gap-3 mt-4 flex-wrap">
+
+        <a asp-page="/BookPages/Index"
+           class="btn btn-primary">
+            Books
+        </a>
+
+        <a asp-page="/AuthorsPages/Index"
+           class="btn btn-primary">
+            Authors
+        </a>
+
+        <a asp-page="/PublisherPages/Index"
+           class="btn btn-primary">
+            Publishers
+        </a>
+
+        <a asp-page="/CategoryPages/Index"
+           class="btn btn-primary">
+            Categories
+        </a>
+
+    </div>
 </div>
